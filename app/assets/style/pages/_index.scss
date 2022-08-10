@@ -1,0 +1,407 @@
+// banner
+.banner {
+    background-image: url(../images/home-header.png);
+    height: 787px;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include g-md {
+        background-image: url(../images/home-header-sm.png);
+        height: 396px;
+    }
+}
+
+.banner-content {
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.banner-text {
+    text-align: end;
+
+    h1 {
+        font-size: 36px;
+        color: $secondary;
+
+        @include g-md {
+            font-size: 24px;
+        }
+
+        @include g-sm {
+            font-size: 16px;
+        }
+    }
+
+    p {
+        font-size: 64px;
+        color: $secondary;
+        font-weight: bold;
+        margin-bottom: 10px;
+
+        @include g-md {
+            font-size: 40px;
+        }
+
+        @include g-sm {
+            font-size: 24px;
+        }
+    }
+
+    a {
+        font-size: 20px;
+        color: $light;
+        background-color: $primary;
+        padding: 6px 12px;
+    }
+}
+
+// information
+.infor {
+    background-color: $info;
+}
+
+.infor-content {
+    padding: 80px 0;
+
+    @include g-sm {
+        padding: 40px 0;
+    }
+
+    h2 {
+        font-size: 48px;
+        color: $secondary;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 32px;
+
+        @include g-sm {
+            font-size: 24px;
+        }
+    }
+}
+
+.infor-text {
+    display: flex;
+    justify-content: center;
+    column-gap: 24px;
+
+    @include g-lg {
+        flex-wrap: wrap;
+        row-gap: 24px;
+    }
+
+
+
+    li {
+        width: 23.6%;
+        text-align: center;
+
+        @include g-lg {
+            width: 48.2%;
+        }
+
+        @include g-sm {
+            width: 100%;
+        }
+
+    }
+
+    h3 {
+        font-size: 24px;
+        color: $secondary;
+        font-weight: bold;
+        margin: 24px 0 8px;
+
+    }
+
+    img {
+        width: 84px;
+        margin: 0 auto;
+    }
+
+    p {
+        text-align: left;
+    }
+}
+
+// classic
+
+.classic-content {
+    padding: 80px 0;
+
+
+    @include g-sm {
+        padding: 40px 0;
+    }
+
+    h2 {
+        font-size: 48px;
+        font-weight: bold;
+        color: $secondary;
+        text-align: center;
+        margin-bottom: 48px;
+
+        @include g-sm {
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+    }
+}
+
+.classic-text {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 24px;
+
+    @include g-lg {
+        row-gap: 24px;
+    }
+
+    li {
+        width: 32%;
+
+        @include g-lg {
+            width: 48.2%;
+        }
+
+        @include g-md {
+            width: 48.3%;
+        }
+
+        @include g-sm {
+            width: 100%;
+        }
+    }
+
+    h4 {
+        font-size: 48px;
+        color: $primary;
+        font-style: italic;
+        text-align: center;
+        margin-top: 8px;
+    }
+}
+
+// crossover
+
+.crossover {
+    background-image: url(../images/index-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include g-lg {
+        background-image: url(../images/index-bg-md.png);
+    }
+
+    @include g-sm {
+        background-image: url(../images/index-bg-sm.png);
+    }
+}
+
+.crossover-content {
+    padding: 80px 0;
+
+    @include g-sm {
+        padding: 40px 0;
+    }
+
+    h2 {
+        font-size: 48px;
+        color: $light;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 48px;
+
+        @include g-sm {
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+    }
+}
+
+.crossover-text {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include g-lg {
+        row-gap: 24px;
+    }
+
+
+    li {
+        width: 50%;
+
+        @include g-lg {
+            width: 100%;
+        }
+    }
+
+    h4 {
+        font-size: 48px;
+        color: $primary;
+        font-style: italic;
+        text-align: center;
+        background-color: $light;
+        padding: 8px 0;
+    }
+}
+
+.crossover-photo-lg {
+    @include g-sm {
+        display: none;
+    }
+}
+
+
+.crossover-photo-sm {
+    display: none;
+
+    @include g-sm {
+        display: block;
+    }
+}
+
+// recommend
+
+.recommend-content {
+    padding: 80px 0;
+
+    @include g-sm {
+        padding: 40px 0;
+    }
+
+    h2 {
+        font-size: 48px;
+        color: $secondary;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 48px;
+
+        @include g-sm {
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+    }
+}
+
+.recommend-card {
+    display: flex;
+    justify-content: center;
+    column-gap: 24px;
+
+    @include g-lg {
+        flex-wrap: wrap;
+        row-gap: 24px;
+    }
+
+    li {
+        width: 23.6%;
+        border: 1px solid #dee2e6;
+        border-radius: 4px;
+        box-shadow: 0px 2px 6px #00000029;
+
+        @include g-lg {
+            width: 48.2%;
+        }
+
+        @include g-sm {
+            width: 100%;
+        }
+    }
+
+}
+
+.recommend-text {
+    padding: 16px;
+
+    h5 {
+        font-weight: 500;
+        margin-bottom: 8px;
+    }
+
+    p {
+        margin-bottom: 72px;
+    }
+
+    span {
+        font-size: 14px;
+        color: #707070;
+    }
+}
+
+// contact
+
+.contact {
+    background-color: $info;
+    padding: 80px 0;
+
+    @include g-sm {
+        padding: 40px 0;
+    }
+}
+
+.contact-content {
+    h2 {
+        font-size: 48px;
+        text-align: center;
+        color: $secondary;
+        font-weight: bold;
+        margin-bottom: 48px;
+
+        @include g-sm {
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+    }
+
+    p {
+        font-size: 20px;
+        margin-bottom: 24px;
+
+        @include g-lg {
+            font-size: 16px;
+        }
+    }
+}
+
+.contact-form {
+
+    input,
+    textarea {
+        margin: 8px 0 16px;
+        display: block;
+        width: 100%;
+        padding: 6px 0 6px 12px;
+        background-color: transparent;
+    }
+
+    .accept {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .accept-btn {
+        margin: 6px 6px 0 0;
+        width: auto;
+    }
+
+    a {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        color: $light;
+        background-color: $primary;
+        width: 65%;
+        padding: 16px 0;
+        margin-top: 48px;
+
+        @include g-sm {
+            width: 100%;
+        }
+    }
+}

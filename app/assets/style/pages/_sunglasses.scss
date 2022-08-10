@@ -1,0 +1,26 @@
+.sunglasses-product-content {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 80px;
+
+    @include g-lg {
+        row-gap: 40px;
+    }
+
+    @include g-sm {
+        row-gap: 24px;
+    }
+
+    li {
+        width: 31.6%;
+
+        @include g-lg {
+            width: 47.7%;
+        }
+
+        @include g-sm {
+            width: 100%;
+        }
+    }
+}

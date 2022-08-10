@@ -1,35 +1,15 @@
-$color: #00cc99;
+@import "reset";
+@import "grid";
+@import "base";
+@import "utilities";
+@import "variable";
 
-.header {
-  height: 200px;
-  background-color: #00cc99;
-}
-
-.footer {
-  height: 200px;
-  background-color: #00cc99;
-}
-
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: blue;
-  display: flex;
-  transition: all 0.5s;
-  &:hover {
-    width: 200px;
-    background-color: $color;
-  }
-}
-
-.box2{
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  display: flex;
-  transition: all 0.5s;
-  &:hover {
-    width: 200px;
-    background-color: $color;
-  }
-}
+@import "layout";
+@import "pages/index";
+@import "pages/optical";
+@import "pages/sunglasses";
+@import "pages/branch";
+@import "pages/store";
+@import "pages/qna";
+@import "pages/blog";
+@import "pages/event";

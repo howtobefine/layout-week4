@@ -1,0 +1,265 @@
+// header
+.header {
+    background-color: $primary;
+}
+
+.header-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+    text-align: center;
+
+    @include g-md {
+        a {
+            display: block;
+            margin: 12px auto;
+        }
+    }
+
+    .header-list {
+        display: flex;
+        column-gap: 52px;
+
+        @include g-md {
+            display: none;
+        }
+    }
+
+    span {
+        font-size: 30px;
+        color: $light;
+    }
+
+    li:last-child {
+        a {
+            padding-right: 0;
+        }
+    }
+
+    a {
+        color: $light;
+        font-size: 20px;
+        padding: 12px;
+    }
+}
+
+.header-list-mobile {
+    display: none;
+
+    @include g-md {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+
+        li {
+            width: 50%;
+        }
+
+        a {
+            display: block;
+            color: $light;
+            padding: 12px 0;
+            border: 1px solid $light;
+        }
+
+        li:first-child,li:nth-child(3){
+            a{
+                border-left: 0;
+            }
+        }
+        li:nth-child(2),li:last-child{
+            a{
+                border-right: 0;
+            }
+        }
+        li:nth-child(3),li:last-child{
+            a{
+                border-bottom: 0;
+            }
+        }
+    }
+
+}
+
+// footer
+
+.footer {
+    background-color: $primary;
+    padding: 36px 0 32px;
+
+    @include g-sm {
+        padding: 24px 0;
+    }
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.footer-navbar {
+    display: flex;
+    column-gap: 36px;
+    white-space: nowrap;
+
+    @include g-lg {
+        column-gap: 16px;
+    }
+
+    @include g-sm {
+        display: none;
+    }
+
+    a {
+        color: $light;
+        padding: 12px;
+    }
+
+    li:first-child {
+        a {
+            padding-left: 0;
+        }
+    }
+}
+
+.footer-container {
+    @include g-sm {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+        .footer-nav {
+            align-self: flex-start;
+        }
+    }
+
+}
+
+.social-media {
+    display: flex;
+    column-gap: 32px;
+
+    @include g-lg {
+        column-gap: 16px;
+    }
+
+    @include g-sm {
+        column-gap: 8px;
+        justify-content: flex-end;
+    }
+
+    img {
+        width: 48px;
+
+        @include g-lg {
+            width: 36px;
+        }
+
+        @include g-sm {
+            width: 24px;
+        }
+    }
+}
+
+.footer-content {
+
+    .tel {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+
+    .email {
+        display: flex;
+        align-items: center;
+    }
+
+    span {
+        color: $light;
+        font-size: 36px;
+        display: inline-block;
+        margin-right: 22px;
+
+        @include g-sm {
+            font-size: 20px;
+            margin-right: 12px;
+        }
+    }
+
+    a {
+        color: $light;
+        font-size: 36px;
+
+        @include g-sm {
+            font-size: 16px;
+        }
+    }
+}
+
+.footer-text {
+    display: flex;
+    justify-content: space-between;
+    color: $light;
+    white-space: nowrap;
+
+    @include g-sm {
+        font-size: 16px;
+        flex-direction: column;
+
+        span {
+            margin-bottom: 8px;
+        }
+    }
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+
+    @include g-sm {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    a {
+        font-size: 14px;
+        color: $light;
+        padding: 12px;
+
+        @include g-sm {
+            font-size: 16px;
+            padding-left: 0;
+        }
+    }
+
+    li:last-child {
+        @include g-sm {
+            margin-top: 8px;
+        }
+
+        a {
+            padding-right: 0;
+        }
+    }
+}
+
+.line-bg {
+    margin: 32px 0;
+
+    @include g-sm {
+        display: none;
+    }
+}
+
+.line-sm {
+    display: none;
+
+    @include g-sm {
+        display: block;
+        margin: 24px 0 16px;
+    }
+}

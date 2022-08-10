@@ -5,22 +5,80 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title><%- title %></title>
+  <title>
+    <%- title %>
+  </title>
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
 <body>
   <header class="header">
-    這是 header
+    <nav class="header-navbar container">
+      <a href="index.html"><img src="./assets/images/logo-white.png" alt="logo" width="80"></a>
+      <ul class="header-list">
+        <li><a href="optical.html">系列鏡框</a></li>
+        <li><a href="branch.html">門市據點</a></li>
+        <li><a href="blog.html">部落格</a></li>
+        <li><a href="qna.html">常見問題</a></li>
+      </ul>
+    </nav>
+    <ul class="header-list-mobile">
+      <li><a href="optical.html">系列鏡框</a></li>
+      <li><a href="branch.html">門市據點</a></li>
+      <li><a href="blog.html">部落格</a></li>
+      <li><a href="qna.html">常見問題</a></li>
+    </ul>
   </header>
 
   <%- contents %>
 
-  <footer class="footer">
-    footer
-  </footer>
-  <script src="./assets/js/vendors.js"></script>
-  <script src="./assets/js/all.js"></script>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-container">
+          <nav class="footer-nav">
+            <ul class="footer-navbar">
+              <li><a href="index.html">首頁</a></li>
+              <li><a href="optical.html">系列鏡框</a></li>
+              <li><a href="branch.html">門市據點</a></li>
+              <li><a href="blog.html">部落格</a></li>
+              <li><a href="qna.html">常見問題</a></li>
+            </ul>
+            <ul class="social-media">
+              <li><a href="#"><img src="./assets/images/ic-social-fb.png" alt="facebook"></a></li>
+              <li><a href="#"><img src="./assets//images/ic_social_ig.png" alt="instagram"></a></li>
+              <li><a href="#"><img src="./assets//images/ic_social_line.png" alt=""></a></li>
+            </ul>
+          </nav>
+          <div class="footer-content">
+            <div class="tel">
+              <span class="material-symbols-outlined">
+                call
+              </span>
+              <a href="tel:+886800000000">
+                0800-000-000
+              </a>
+            </div>
+            <div class="email">
+              <span class="material-symbols-outlined">
+                mail
+              </span>
+              <a href="mailto:glasses@business.com">glasses@business.com</a>
+            </div>
+            <hr class="line-bg">
+          </div>
+        </div>
+        <hr class="line-sm">
+        <div class="footer-text">
+          <span class="font-roboto">Copyright © 2020 Glasses.All rights reserved.</span>
+          <ul class="terms">
+            <li><a href="#">隱私權政策</a></li>
+            <li><a href="#">服務條款</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
 </body>
 
 </html>

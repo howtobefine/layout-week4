@@ -1,0 +1,167 @@
+.blog-nav {
+    background-color: $secondary;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.blog-navbar {
+    display: flex;
+    column-gap: 36px;
+
+    @include g-sm{
+        column-gap: 16px;
+        font-size: 16px;
+    }
+
+    li:first-child {
+        a {
+            padding-left: 0;
+        }
+    }
+
+    a {
+        display: block;
+        color: $light;
+        padding: 12px;
+        @include g-sm{
+            padding: 12px 0;
+        }
+    }
+}
+
+.search {
+    font-size: 30px;
+    color: $light;
+    @include g-sm{
+        display: none;
+    }
+}
+
+.blog{
+    padding-bottom: 80px;
+    @include g-md{
+        padding-top: 8px;
+    }
+
+    @include g-sm{
+        padding-top: 0;
+        padding-bottom: 64px;
+    }
+}
+
+.blog-list {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 44px;
+    row-gap: 60px;
+    @include g-md{
+        row-gap: 24px;
+        padding-bottom: 0;
+    }
+}
+
+.blog-content {
+    display: flex;
+    column-gap: 24px;
+
+    @include g-sm{
+        flex-direction: column;
+    }
+
+    img {
+        width: 49%;
+        @include g-sm{
+            width: 100%;
+        }
+    }
+}
+
+.blog-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 49%;
+    @include g-sm{
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 32px;
+        color: $secondary;
+        @include g-lg{
+            font-size: 28px;
+        }
+        @include g-md{
+            font-size: 24px;
+        }
+    }
+
+    .sub-title {
+        font-size: 20px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 16px;
+        @include g-lg{
+            margin-bottom: 12px;
+            font-size: 18px;
+        }
+        @include g-md{
+            font-size: 16px;
+        }
+
+        @include g-sm{
+            margin-bottom: 0;
+        }
+
+        span {
+            display: block;
+            font-size: 16px;
+        }
+    }
+
+    p {
+        font-size: 20px;
+        color: $blog;
+        @include g-lg{
+            font-size: 18px;
+        }
+
+        @include g-md{
+            font-size: 16px;
+        }
+
+        @include g-sm{
+            display: none;
+        }
+    }
+
+    a {
+        font-size: 36px;
+        font-weight: 900;
+        color: $secondary;
+        display: block;
+        text-align: right;
+        @include g-lg{
+            font-size: 24px;
+        }
+
+        @include g-md{
+            display: none;
+        }
+    }
+
+    .more{
+        font-size: 16px;
+        color: $blog;
+        display: none;
+        @include g-md{
+            display: inline;
+        }
+    }
+}
